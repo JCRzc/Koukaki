@@ -1,1 +1,113 @@
-/*# sourceMappingURL=theme.css.map */
+section,
+footer {
+  animation: sectionFadeIn 1s 0ms ease-in-out both;
+}
+
+.banner {
+  animation: sectionFadeInVideo 1s 0ms ease-in-out both;
+}
+.banner > img {
+  animation: sectionFadeIn 1s 0ms ease-in-out both;
+}
+
+@keyframes sectionFadeIn {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes sectionFadeInVideo {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+* ::after, #studio h2::before, .sectionNomination::before, .site-footer::before, .flower {
+  animation: flowerRotate 10s linear infinite;
+}
+
+@keyframes flowerRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.story-h2,
+.studio-h2 {
+  display: inline-block;
+  overflow: hidden;
+  height: 60px;
+  text-align: center;
+  line-height: 100%;
+}
+
+.story-h2,
+.stepOne,
+.stepTwo {
+  animation: titleScroll 700ms ease-in-out both;
+}
+
+@keyframes titleScroll {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.observe-story,
+.observe-studio {
+  top: -100px;
+  position: relative;
+  display: block;
+}
+
+.h2-contain {
+  overflow: hidden;
+  display: inline-block;
+  height: 80px;
+  margin-top: 20px;
+}
+
+.sectionNomination {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.sectionNomination h3 {
+  background-image: url("http://localhost/koukaki/wp-content/themes/foce-child/assets/images/background_orange.png");
+  background-size: 100%;
+  text-align: left;
+  padding: 120px 60px;
+}
+.sectionNomination img {
+  margin-top: 120px;
+  height: 120px;
+}
+.sectionNomination::before {
+  content: url("http://localhost/koukaki/wp-content/themes/foce-child/assets/images/Sunflower.png");
+  position: absolute;
+  left: 9em;
+  top: -2em;
+}
+.sectionNomination::after {
+  content: url("http://localhost/koukaki/wp-content/themes/foce-child/assets/images/Orchid.png");
+  position: absolute;
+  right: -5em;
+  bottom: 23em;
+}
+
+.site-footer::before,
+.site-footer::after {
+  display: none;
+}

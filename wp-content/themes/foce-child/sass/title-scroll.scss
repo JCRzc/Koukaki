@@ -1,0 +1,38 @@
+.story-h2,
+.studio-h2 {
+	display: inline-block;
+	overflow: hidden;
+	height: 60px;
+	text-align: center;
+	line-height: 100%;
+}
+
+.story-h2,
+.stepOne,
+.stepTwo {
+	animation: titleScroll 700ms ease-in-out both;
+}
+
+@keyframes titleScroll {
+	0% {
+		transform: translateY(100px);
+	}
+
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+.observe-story,
+.observe-studio {
+	top: -100px;
+	position: relative;
+	display: block;
+}
+
+.h2-contain {
+	overflow: hidden;
+	display: inline-block;
+	height: 80px;
+	margin-top: 20px;
+}
