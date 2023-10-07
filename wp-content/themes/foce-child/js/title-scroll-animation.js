@@ -1,36 +1,4 @@
-// // Title scroll 
-
-// // Remove the transition class
-// const titleStory = document.querySelector('.story-h2');
-// titleStory.classList.remove('story-h2');
-// const titleStepOne = document.querySelector('.stepOne');
-// titleStepOne.classList.remove('stepOne');
-// const titleStepTwo = document.querySelector('.stepTwo');
-// titleStepTwo.classList.remove('stepTwo');
-
-// function titleObserver(classAnim, classObserve, nameConst) {
-
-//   // Create the observer :
-//   const observer = new IntersectionObserver(entries => {
-//     entries.forEach(entry => {
-//       // If the element is visible
-//       if (entry.isIntersecting) {
-//         // Add the animation class
-//         nameConst.classList.add(classAnim);
-//         return;
-//       }
-//       // We're not intersecting, so remove the class!
-//       nameConst.classList.remove(classAnim);
-//     });
-//   });
-
-//   // Tell the observer which elements to track
-//   observer.observe(document.querySelector(classObserve));
-// }
-
-// titleObserver('story-h2', '.observe-story', titleStory);
-// titleObserver('stepOne', '.observe-studio', titleStepOne);
-// titleObserver('stepTwo', '.observe-studio', titleStepTwo);
+// Title scroll 
 
 // Supprimer les classes de transition
 const targetStory = document.querySelector('.story-h2');

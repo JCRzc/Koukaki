@@ -1,3 +1,7 @@
+body {
+  height: auto !important;
+}
+
 section,
 footer {
   animation: sectionFadeIn 1s 0ms ease-in-out both;
@@ -110,4 +114,31 @@ footer {
 .site-footer::before,
 .site-footer::after {
   display: none;
+}
+
+.banner {
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+}
+.banner .background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.banner .floating-title {
+  position: relative;
+  z-index: 1;
+  animation: float 1.5s ease-in-out infinite alternate;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+  }
 }

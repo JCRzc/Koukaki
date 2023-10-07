@@ -5,7 +5,13 @@ get_header();
 
     <main id="primary" class="site-main">
         <section class="banner">
-            <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt="logo Fleurs d'oranger & chats errants">
+            <div class="background-video">
+                <video autoplay loop muted>
+                    <source src="<?php echo get_stylesheet_directory_uri() . '/assets/video/Studio_Koukaki_video.mp4'; ?>" type="video/mp4">
+                </video>
+            </div>
+            <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt="logo Fleurs d'oranger & chats errants" class="floating-title" 
+            data-0="top:0px" data-600="top:-500px"> 
         </section>
         <section id="#story" class="story">
         <h2>
