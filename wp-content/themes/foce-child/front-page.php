@@ -28,10 +28,17 @@ get_header();
             </article>
             <article id="place">
                 <div>
-                    <h3>Le Lieu</h3>
+                    <h3>Le lieu</h3>
                     <p><?php echo get_theme_mod('place'); ?></p>
                 </div>
-
+                <img class="bigCloud cloud"src="<?php echo get_stylesheet_directory_uri() . '/assets/images/big_cloud.png';?>" alt="gros nuage"
+                data-anchor-target="#place"
+                data--0-bottom-top="transform: translateX(0px);"
+                data-150-top="transform: translateX(300px);">
+                <img class="littleCloud cloud" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/little_cloud.png';?>" alt="petit nuage"
+                data-anchor-target="#place"
+                data--0-bottom-top="transform: translateX(0px);" 
+                data-100-top="transform: translateX(300px);">
             </article>
         </section>
 

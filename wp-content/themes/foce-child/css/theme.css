@@ -149,6 +149,10 @@ footer {
   margin-right: 0;
   width: 100%;
 }
+.story #characters div {
+  flex: none;
+  flex-shrink: 0;
+}
 
 .swiper-section {
   width: 100%;
@@ -177,7 +181,40 @@ footer {
   padding-left: 50px;
 }
 
-.story #characters div {
-  flex: none;
-  flex-shrink: 0;
+.story #place {
+  background-image: url("../assets/images/Studio_Koukaki-image_place.png");
+  display: flex;
+  background-size: cover;
+}
+.story #place > div p {
+  padding-left: 10em;
+}
+
+.cloud {
+  position: absolute;
+  filter: blur(20px);
+}
+
+.bigCloud {
+  bottom: 500px;
+  left: 50%;
+}
+
+.littleCloud {
+  bottom: 400px;
+  left: 35%;
+}
+
+#place div h3 {
+  position: relative;
+  top: -18px;
+  left: 50px;
+}
+#place div p {
+  position: relative;
+  right: 4px;
+}
+
+.site-main {
+  overflow: hidden;
 }

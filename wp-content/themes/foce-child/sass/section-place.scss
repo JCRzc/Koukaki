@@ -1,0 +1,46 @@
+
+.story {
+	#place {
+		background-image: url("../assets/images/Studio_Koukaki-image_place.png");
+		display: flex;
+		background-size: cover;
+		>div {
+			p {
+				padding-left: 10em;
+			}
+		}
+	}
+}
+
+.cloud {
+	position: absolute;
+	filter: blur(20px);
+}
+
+.bigCloud {
+	bottom: 500px;
+	left: 50%;
+}
+
+.littleCloud {
+	bottom: 400px;
+	left: 35%;
+}
+
+#place {
+	div {
+		h3 {
+			position: relative;
+			top: -18px;
+			left: 50px;
+		}
+		p {
+			position: relative;
+			right: 4px;
+		}
+	}
+}
+
+.site-main {
+	overflow: hidden;
+}
