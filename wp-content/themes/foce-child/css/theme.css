@@ -192,17 +192,17 @@ footer {
 
 .cloud {
   position: absolute;
-  filter: blur(20px);
+  filter: blur(15px);
 }
 
 .bigCloud {
   bottom: 500px;
-  left: 50%;
+  right: 10%;
 }
 
 .littleCloud {
   bottom: 400px;
-  left: 35%;
+  left: 55%;
 }
 
 #place div h3 {

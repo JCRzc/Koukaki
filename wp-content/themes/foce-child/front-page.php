@@ -33,12 +33,12 @@ get_header();
                 </div>
                 <img class="bigCloud cloud"src="<?php echo get_stylesheet_directory_uri() . '/assets/images/big_cloud.png';?>" alt="gros nuage"
                 data-anchor-target="#place"
-                data--0-bottom-top="transform: translateX(0px);"
-                data-150-top="transform: translateX(300px);">
+                data--0-bottom-top="transform: translateX(300px);"
+                data-10-top="transform: translateX(0px);">
                 <img class="littleCloud cloud" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/little_cloud.png';?>" alt="petit nuage"
                 data-anchor-target="#place"
-                data--0-bottom-top="transform: translateX(0px);" 
-                data-100-top="transform: translateX(300px);">
+                data--0-bottom-top="transform: translateX(300px);" 
+                data-10-top="transform: translateX(0px);">
             </article>
         </section>
 
