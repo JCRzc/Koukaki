@@ -1,4 +1,4 @@
-// Title scroll 
+// Défilement des titres
 
 // Supprimer les classes de transition
 const targetStory = document.querySelector('.story-h2');

@@ -1,14 +1,15 @@
 .story {
-	#characters {
-		flex-direction: column;
-		margin-left: auto;
-		margin-right: 0;
-		width: 100%;
-		div {
-			flex: none;
-			flex-shrink: 0;
-		}
-	}
+    #characters {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: 0;
+        width: 100%;
+
+        div {
+            flex: none;
+            flex-shrink: 0;
+        }
+    }
 }
 
 .swiper-section {

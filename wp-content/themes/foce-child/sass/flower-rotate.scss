@@ -1,11 +1,20 @@
-* ::after, #studio h2::before, .sectionNomination::before, .site-footer::before, .flower {
-    animation: flowerRotate 10s linear infinite;
+:root {
+    --speed: 20s;
+}
+
+* ::after,
+#studio h2::before,
+.sectionNomination::before,
+.site-footer::before,
+.flower {
+    animation: flowerRotate var(--speed) linear infinite;
 }
 
 @keyframes flowerRotate {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }

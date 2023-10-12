@@ -1,0 +1,225 @@
+.main-navigation {
+  height: 75px;
+
+  & ul {
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+
+    & .site-title {
+      display: block;
+    }
+  }
+}
+
+.nav-menu {
+  width: 50%;
+
+  & .site-title {
+    position: absolute;
+    left: 40%;
+    top: 26px;
+  }
+}
+
+#site-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.menu-toggle {
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  top: 26px;
+  right: 8%;
+}
+
+// Menu hamburger
+
+
+.main-navigation {
+  .line {
+    display: block;
+    position: relative;
+    width: 35px;
+    height: 1px;
+    margin-bottom: 5px;
+    z-index: 1;
+    transform-origin: 1px 0px !important;
+    transition: transform 0.8s, opacity 0.2s ease;
+  }
+}
+
+.main-navigation {
+  .line {
+    &:first-child {
+      transform-origin: 0% 0% !important;
+    }
+  }
+}
+
+.main-navigation {
+  .line {
+    &:nth-last-child(2) {
+      transform-origin: 0% 100% !important;
+    }
+  }
+}
+
+// Transformer les lignes du bouton hamburger en croix
+
+.main-navigation.toggled {
+  .line {
+    transform: rotate(-45deg) translateY(2px) translateX(-2px);
+    opacity: 1;
+  }
+}
+
+// Cacher la ligne du milieu
+
+.main-navigation.toggled {
+  .line {
+    &:nth-last-child(2) {
+      transform: rotate(0deg) scale(0.2, 0.2);
+      opacity: 0;
+    }
+  }
+}
+
+// Changer la direction de la dernière ligne
+
+.main-navigation.toggled {
+  .line {
+    &:nth-last-child(3) {
+      transform: rotate(45deg) translate(-6px, -9px);
+    }
+  }
+}
+
+
+#menu {
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  padding-top: 180px;
+  margin-top: 1030px;
+  transform-origin: 0% 0% !important;
+  transform: translate(0%, -150%);
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  opacity: 0;
+  background: #FFF5E9;
+  overflow: hidden;
+
+  & ul {
+    flex-direction: column;
+  }
+}
+
+#menu {
+  li {
+    font-size: 64px;
+    margin: 40px;
+    text-align: center;
+  }
+}
+
+#menu {
+  li {
+    a {
+      &:hover {
+        text-shadow: 0px 0px 14px #FF5C00;
+        color: black;
+      }
+    }
+  }
+}
+
+.menu-display {
+  display: none;
+}
+
+// Animation du menu 
+
+.main-navigation.toggled {
+  #menu {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.image-menu {
+  position: absolute;
+}
+
+.logo-menu {
+  width: 154px;
+  left: 45%;
+  top: 50px;
+  filter: drop-shadow(0px 0px 26.094px rgba(255, 92, 0, 0.6));
+}
+
+.menu-footer {
+  left: 45%;
+  bottom: 100px;
+}
+
+.flower-menu-random {
+  width: 76px;
+  top: 425px;
+  right: -2.5%;
+}
+
+.flower-menu-random2 {
+  width: 71px;
+  top: 480px;
+  left: 15%;
+}
+
+.flower-menu-orchid {
+  width: 173px;
+  top: 75px;
+  left: -4%;
+}
+
+.flower-menu-sunflower {
+  width: 216px;
+  top: 90px;
+  right: 10%;
+}
+
+.flower-menu-hibiscus {
+  width: 626px;
+  top: 700px;
+  right: -22%;
+}
+
+.cat-menu-orenjiiro {
+  top: 725px;
+  left: 5%;
+}
+
+.cat-menu-jaakuna {
+  top: 480px;
+  right: 15%;
+}
+
+.cat-menu-kawaneko {
+  top: 150px;
+  left: 19%;
+}
+
+.cat {
+  animation: float 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(20px);
+  }
+}

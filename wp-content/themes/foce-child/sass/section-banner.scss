@@ -1,30 +1,31 @@
 .banner {
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  margin-bottom: 50px;
+
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .floating-title {
     position: relative;
-    overflow: hidden;
-    background-size: cover;
-  
-    .background-video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
+    z-index: 1;
+    animation: float 1.5s ease-in-out infinite alternate;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0);
     }
-  
-    .floating-title {
-      position: relative;
-      z-index: 1;
-      animation: float 1.5s ease-in-out infinite alternate;
-    }
-  
-    @keyframes float {
-      0% {
-        transform: translateY(0);
-      }
-      100% {
-        transform: translateY(20px);
-      }
+
+    100% {
+      transform: translateY(20px);
     }
   }
-  
+}

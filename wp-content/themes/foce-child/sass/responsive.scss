@@ -1,0 +1,161 @@
+// Menu 
+@media all and (max-width: 700px) {
+    .site-title {
+        font-size: 16px !important;
+        left: 5% !important;
+    }
+}
+
+@media all and (min-width: 300px) and (max-width: 700px) {
+    #menu {
+        height: 69em;
+
+        & img {
+            display: none;
+        }
+
+        & li {
+            line-height: normal;
+            font-size: 30px;
+        }
+
+        & .menu-footer {
+            left: 35%;
+            bottom: 250px;
+        }
+    }
+}
+
+@media all and (min-width: 700px) and (max-width: 900px) {
+    #menu {
+        height: 69em;
+    }
+
+    .site-title {
+        left: 20% !important;
+    }
+}
+
+// Section-banner 
+@media all and (max-width: 700px) {
+    .banner {
+        min-height: 350px;
+        margin: 0;
+    }
+
+    video {
+        display: none;
+    }
+}
+
+// Section-story 
+@media all and (max-width: 700px) {
+    .story-h2 {
+        height: 38px;
+    }
+
+    // Characters 
+    .main-character {
+        & h3 {
+            background-position: center;
+            text-align: center;
+            font-size: 29px;
+            margin-top: -90px;
+        }
+    }
+
+    .swiper-section {
+        margin-bottom: 30px;
+    }
+
+    .swiper-slide {
+        width: 200px !important;
+    }
+
+    // Place 
+    .cloud {
+        display: none;
+    }
+
+    #place {
+        & div {
+            & h3 {
+                left: 10px;
+                margin-top: -100px;
+            }
+
+            & p {
+                right: 60px;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 700px) and (max-width: 1000px) {
+    .swiper-slide {
+        width: 300px !important;
+    }
+}
+
+// Section-studio 
+@media all and (max-width: 700px) {
+    .studio-h2 {
+        height: 37px;
+    }
+}
+
+// Section-nomination 
+@media all and (max-width: 700px) {
+    .sectionNomination {
+        flex-direction: column;
+        align-items: center;
+
+        & h3 {
+            text-align: center;
+            font-size: 18px;
+            padding: 35px;
+        }
+
+        & img {
+            position: relative;
+            height: auto;
+            width: 250px;
+            margin-top: 25px;
+        }
+    }
+
+    .sectionNomination::before,
+    .sectionNomination::after {
+        display: none;
+    }
+}
+
+@media all and (min-width: 700px) and (max-width: 1000px) {
+    .sectionNomination {
+        flex-direction: column;
+
+        & h3 {
+            text-align: center;
+            font-size: 28px;
+        }
+
+        & img {
+            position: relative;
+            left: 25%;
+            width: 300px;
+            height: auto;
+            margin-top: -30px;
+        }
+    }
+
+    .sectionNomination {
+        &::before {
+            left: 1em;
+            top: -6em;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+}

@@ -1,9 +1,9 @@
-
 .story {
 	#place {
 		background-image: url("../assets/images/Studio_Koukaki-image_place.png");
 		display: flex;
 		background-size: cover;
+
 		>div {
 			p {
 				padding-left: 10em;
@@ -19,12 +19,12 @@
 
 .bigCloud {
 	bottom: 500px;
-	right: 10%;
+	right: 25%;
 }
 
 .littleCloud {
 	bottom: 400px;
-	left: 55%;
+	right: 55%;
 }
 
 #place {
@@ -34,6 +34,7 @@
 			top: -18px;
 			left: 50px;
 		}
+
 		p {
 			position: relative;
 			right: 4px;
