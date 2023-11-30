@@ -3,14 +3,14 @@
     justify-content: center;
     margin-top: 60px;
 
-    & h3 {
+    h3 {
         background-image: url("http://localhost/koukaki/wp-content/themes/foce-child/assets/images/background_orange.png");
         background-size: 100%;
         text-align: left;
         padding: 120px 60px;
     }
 
-    & img {
+    img {
         margin-top: 120px;
         height: 120px;
     }
@@ -30,7 +30,10 @@
     }
 }
 
-.site-footer::before,
-.site-footer::after {
-    display: none;
+.site-footer {
+
+    &::before,
+    &::after {
+        display: none;
+    }
 }

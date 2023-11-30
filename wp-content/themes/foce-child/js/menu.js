@@ -1,6 +1,6 @@
 jQuery(document).ready(function ($) {
     // Sélectionner tous les liens du menu
-    var menuLinks = $('#menu a');
+    let menuLinks = $('#menu a');
 
     // Parcourir chaque lien
     menuLinks.on('click', function (event) {
@@ -8,7 +8,7 @@ jQuery(document).ready(function ($) {
         event.preventDefault();
 
         // Obtenir l'URL de l'ancre du lien
-        var targetAnchor = $(this).attr('href');
+        let targetAnchor = $(this).attr('href');
 
         // Fermer le menu hamburger en supprimant la classe "toggled"
         $('#masthead').removeClass('toggled');

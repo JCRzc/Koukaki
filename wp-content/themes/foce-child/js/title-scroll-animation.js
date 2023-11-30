@@ -19,7 +19,7 @@ function setupIntersectionObserver(animationClass, targetClass, targetElement) {
         targetElement.classList.add(animationClass);
         return;
       }
-      // Nous ne sommes pas en intersection, donc supprimer la classe !
+      // Pas en intersection, donc supprimer la classe !
       targetElement.classList.remove(animationClass);
     });
   });

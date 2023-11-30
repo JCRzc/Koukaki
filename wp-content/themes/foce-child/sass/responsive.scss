@@ -1,30 +1,33 @@
 // Menu 
-@media all and (max-width: 700px) {
+
+@media all and (min-width: 300px) and (max-width: 700px) {
+
     .site-title {
         font-size: 16px !important;
         left: 5% !important;
     }
-}
 
-@media all and (min-width: 300px) and (max-width: 700px) {
     #menu {
         height: 69em;
 
-        & img {
+        img {
             display: none;
         }
 
-        & li {
-            line-height: normal;
-            font-size: 30px;
+        ul {
+            li {
+                line-height: normal;
+                font-size: 30px;
+            }
         }
 
-        & .menu-footer {
+        .menu-footer {
             left: 35%;
             bottom: 250px;
         }
     }
 }
+
 
 @media all and (min-width: 700px) and (max-width: 900px) {
     #menu {
@@ -56,7 +59,7 @@
 
     // Characters 
     .main-character {
-        & h3 {
+        h3 {
             background-position: center;
             text-align: center;
             font-size: 29px;
@@ -78,13 +81,13 @@
     }
 
     #place {
-        & div {
-            & h3 {
+        div {
+            h3 {
                 left: 10px;
                 margin-top: -100px;
             }
 
-            & p {
+            p {
                 right: 60px;
             }
         }
@@ -110,13 +113,13 @@
         flex-direction: column;
         align-items: center;
 
-        & h3 {
+        h3 {
             text-align: center;
             font-size: 18px;
             padding: 35px;
         }
 
-        & img {
+        img {
             position: relative;
             height: auto;
             width: 250px;
@@ -134,12 +137,12 @@
     .sectionNomination {
         flex-direction: column;
 
-        & h3 {
+        h3 {
             text-align: center;
             font-size: 28px;
         }
 
-        & img {
+        img {
             position: relative;
             left: 25%;
             width: 300px;

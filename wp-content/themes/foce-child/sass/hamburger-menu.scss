@@ -1,12 +1,12 @@
 .main-navigation {
   height: 75px;
 
-  & ul {
+  ul {
     display: flex;
     margin: 0;
     padding-left: 0;
 
-    & .site-title {
+    .site-title {
       display: block;
     }
   }
@@ -15,7 +15,7 @@
 .nav-menu {
   width: 50%;
 
-  & .site-title {
+  .site-title {
     position: absolute;
     left: 40%;
     top: 26px;
@@ -37,7 +37,6 @@
 
 // Menu hamburger
 
-
 .main-navigation {
   .line {
     display: block;
@@ -48,51 +47,32 @@
     z-index: 1;
     transform-origin: 1px 0px !important;
     transition: transform 0.8s, opacity 0.2s ease;
-  }
-}
 
-.main-navigation {
-  .line {
     &:first-child {
       transform-origin: 0% 0% !important;
     }
-  }
-}
 
-.main-navigation {
-  .line {
     &:nth-last-child(2) {
       transform-origin: 0% 100% !important;
     }
   }
-}
 
-// Transformer les lignes du bouton hamburger en croix
+  // Transformer les lignes du bouton hamburger en croix
+  &.toggled {
+    .line {
+      transform: rotate(-45deg) translateY(2px) translateX(-2px);
+      opacity: 1;
 
-.main-navigation.toggled {
-  .line {
-    transform: rotate(-45deg) translateY(2px) translateX(-2px);
-    opacity: 1;
-  }
-}
+      // Cacher la ligne du milieu
+      &:nth-last-child(2) {
+        transform: rotate(0deg) scale(0.2, 0.2);
+        opacity: 0;
+      }
 
-// Cacher la ligne du milieu
-
-.main-navigation.toggled {
-  .line {
-    &:nth-last-child(2) {
-      transform: rotate(0deg) scale(0.2, 0.2);
-      opacity: 0;
-    }
-  }
-}
-
-// Changer la direction de la dernière ligne
-
-.main-navigation.toggled {
-  .line {
-    &:nth-last-child(3) {
-      transform: rotate(45deg) translate(-6px, -9px);
+      // Changer la direction de la dernière ligne
+      &:nth-last-child(3) {
+        transform: rotate(45deg) translate(-6px, -9px);
+      }
     }
   }
 }
@@ -112,25 +92,19 @@
   background: #FFF5E9;
   overflow: hidden;
 
-  & ul {
+  ul {
     flex-direction: column;
-  }
-}
 
-#menu {
-  li {
-    font-size: 64px;
-    margin: 40px;
-    text-align: center;
-  }
-}
+    li {
+      font-size: 64px;
+      margin: 40px;
+      text-align: center;
 
-#menu {
-  li {
-    a {
-      &:hover {
-        text-shadow: 0px 0px 14px #FF5C00;
-        color: black;
+      a {
+        &:hover {
+          text-shadow: 0px 0px 14px #FF5C00;
+          color: black;
+        }
       }
     }
   }

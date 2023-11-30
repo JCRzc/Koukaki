@@ -119,8 +119,7 @@ footer {
   bottom: 23em;
 }
 
-.site-footer::before,
-.site-footer::after {
+.site-footer::before, .site-footer::after {
   display: none;
 }
 
@@ -272,25 +271,20 @@ footer {
   transform-origin: 1px 0px !important;
   transition: transform 0.8s, opacity 0.2s ease;
 }
-
 .main-navigation .line:first-child {
   transform-origin: 0% 0% !important;
 }
-
 .main-navigation .line:nth-last-child(2) {
   transform-origin: 0% 100% !important;
 }
-
 .main-navigation.toggled .line {
   transform: rotate(-45deg) translateY(2px) translateX(-2px);
   opacity: 1;
 }
-
 .main-navigation.toggled .line:nth-last-child(2) {
   transform: rotate(0deg) scale(0.2, 0.2);
   opacity: 0;
 }
-
 .main-navigation.toggled .line:nth-last-child(3) {
   transform: rotate(45deg) translate(-6px, -9px);
 }
@@ -312,14 +306,12 @@ footer {
 #menu ul {
   flex-direction: column;
 }
-
-#menu li {
+#menu ul li {
   font-size: 64px;
   margin: 40px;
   text-align: center;
 }
-
-#menu li a:hover {
+#menu ul li a:hover {
   text-shadow: 0px 0px 14px #FF5C00;
   color: black;
 }
@@ -406,20 +398,18 @@ footer {
     transform: translateY(20px);
   }
 }
-@media all and (max-width: 700px) {
+@media all and (min-width: 300px) and (max-width: 700px) {
   .site-title {
     font-size: 16px !important;
     left: 5% !important;
   }
-}
-@media all and (min-width: 300px) and (max-width: 700px) {
   #menu {
     height: 69em;
   }
   #menu img {
     display: none;
   }
-  #menu li {
+  #menu ul li {
     line-height: normal;
     font-size: 30px;
   }
