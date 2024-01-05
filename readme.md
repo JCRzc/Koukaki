@@ -29,3 +29,4 @@ Ma mission consistait à dynamiser le site internet du studio d’animation Kouk
 <img width="950" alt="koukaki-site-desktop-menu-screenshot" src="https://github.com/JCRzc/Booki/assets/131395254/a38107b3-af74-4348-955a-5dc1cbb056bb">
 
 ### Mobile
+![koukaki-site-mobile-screenshot-1](https://github.com/JCRzc/Booki/assets/131395254/dab5d326-cefc-46d0-8d6d-9d750c4440ec)
